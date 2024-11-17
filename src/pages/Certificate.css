@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+@keyframes firework1 {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-50px, -100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-100px, 0);
+    opacity: 0;
+  }
+}
+
+@keyframes firework2 {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(50px, -120px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(100px, 0);
+    opacity: 0;
+  }
+}
+.sacramento-regular {
+  font-family: "Sacramento";
+  font-weight: 400;
+}
+
+@keyframes firework3 {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-30px, -80px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-60px, 0);
+    opacity: 0;
+  }
+}
+
+@keyframes confetti {
+  0% {
+    transform: translateY(-10px) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.animate-firework1 {
+  animation: firework1 2s ease-out infinite;
+}
+
+.animate-firework2 {
+  animation: firework2 2.5s ease-out infinite;
+}
+
+.animate-firework3 {
+  animation: firework3 3s ease-out infinite;
+}
+
+.animate-confetti {
+  animation: confetti 3s linear infinite;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.firework {
+  width: 10px;
+  height: 10px;
+  background: #ffd700;
+  border-radius: 50%;
+}
