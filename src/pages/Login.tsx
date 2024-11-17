@@ -12,16 +12,14 @@ export default function Login() {
     const student = students.find((s) => s.regNo === regNo);
 
     if (!student) {
-      setError(
-        `Your Attendance is below the eligibility criteria. You have attended ${student.attendance} days.`
-      );
+      setError(`User not found.`);
       return;
     }
 
     if (!student.eligible) {
-       setError(
-         `Your Attendance is below the eligibility criteria. You have attended ${student.attendance} days. but the minimum required attendance is 7 or above.`
-       );
+      setError(
+        `Your Attendance is below the eligibility criteria. You have attended ${student.attendance} days. but the minimum required attendance is 7 or above.`
+      );
       return;
     }
 
