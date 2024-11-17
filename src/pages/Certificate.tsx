@@ -81,9 +81,9 @@ const CertificateWithName = () => {
 
         {/* Name Overlay */}
         <div className="absolute left-0 right-0 top-[42%] text-center select-none">
-          <h2 className="text-4xl sacramento-regular text-amber-800 font-serif italic px-4 pt-4 animate-fadeIn">
+            <h2 className="text-sm md:text-4xl sacramento-regular text-amber-800 font-serif italic px-4 md:pt-4 animate-fadeIn">
             {name}
-          </h2>
+            </h2>
         </div>
       </div>
     </div>
